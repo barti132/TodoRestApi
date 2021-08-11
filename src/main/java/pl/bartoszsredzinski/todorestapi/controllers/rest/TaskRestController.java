@@ -7,37 +7,37 @@ import org.springframework.web.bind.annotation.*;
 public class TaskRestController {
 
     @GetMapping("getByDate/{date}")
-    public String getTaskByDate(@PathVariable String date){
+    public String getTaskByDate(@PathVariable String date) {
         return "";
     }
 
     @GetMapping("getById/{id}")
-    public String getTaskById(@PathVariable String id){
+    public String getTaskById(@PathVariable String id) {
         return "";
     }
 
     @GetMapping("getByStatus/{status}")
-    public String getTaskByStatus(@PathVariable String status){
+    public String getTaskByStatus(@PathVariable String status) {
         return "";
     }
 
     @GetMapping("getAll")
-    public String getAllTask(){
+    public String getAllTask() {
         return "";
     }
 
     @PostMapping("add")
-    public String addTask(){
+    public String addTask() {
         return "";
     }
 
     @PutMapping("updateById/{id}")
-    public String updateTaskById(@PathVariable String id){
+    public String updateTaskById(@PathVariable String id) {
         return "";
     }
 
     @DeleteMapping("deleteById/{id}")
-    public String deleteTaskById(@PathVariable String id){
+    public String deleteTaskById(@PathVariable String id) {
         return "";
     }
 

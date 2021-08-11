@@ -19,37 +19,37 @@ public class TaskService {
     }
 
 
-    public List<Task> findAll(){
+    public List<Task> findAll() {
         List<Task> list = new ArrayList<>();
         repository.findAll().forEach(list::add);
         return list;
     }
 
-    public List<Task> findByDate(Date date){
+    public List<Task> findByDate(Date date) {
         List<Task> list = new ArrayList<>();
         repository.findByDate(date).forEach(list::add);
         return list;
     }
 
-    public List<Task> findByStatus(String status){
+    public List<Task> findByStatus(String status) {
         List<Task> list = new ArrayList<>();
         repository.findByStatus(status).forEach(list::add);
         return list;
     }
 
-    public Task findById(Long id){
+    public Task findById(Long id) {
         return repository.findById(id).orElse(null);
     }
 
-    public Task save(Task task){
+    public Task save(Task task) {
         return repository.save(task);
     }
 
-    public void delete(Task task){
+    public void delete(Task task) {
         repository.delete(task);
     }
 
-    public void deleteById(Long id){
+    public void deleteById(Long id) {
         repository.deleteById(id);
     }
 
